@@ -62,7 +62,7 @@ class simpleMath {
 
     let res = BigInt(number) + BigInt(number2)
     console.log(res)
-    return reres
+    return res.toString()
     
   }
   
