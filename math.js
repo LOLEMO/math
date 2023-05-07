@@ -61,7 +61,6 @@ class simpleMath {
   suma({ number, number2 }) {
 
     let res = BigInt(number) + BigInt(number2)
-    console.log(res)
     return res.toString()
     
   }
@@ -69,7 +68,6 @@ class simpleMath {
   unir({ s1, s2 }) {
 
     let conc = s1.toString() + s2.toString()
-    console.log(conc)
     return conc
     
   }
