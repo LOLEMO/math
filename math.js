@@ -24,7 +24,7 @@ class simpleMath {
         },
         {
           opcode: 'resta',
-          text: ' [n] + [n2] ',
+          text: ' [n] - [n2] ',
           blockType: Scratch.BlockType.REPORTER,
           arguments: {
             n: {
