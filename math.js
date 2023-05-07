@@ -61,7 +61,7 @@ class simpleMath {
   suma({ number, number2 }) {
 
     let res = parseInt(number) + parseInt(number2)
-    let reres = res.toString()
+    let reres = res.toString() + "WASAA"
     console.log(reres)
     return reres
     
