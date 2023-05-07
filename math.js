@@ -60,9 +60,8 @@ class simpleMath {
   
   suma({ number, number2 }) {
 
-    let res = parseInt(number) + parseInt(number2)
-    let reres = res.toString() + "WASAA"
-    console.log(reres)
+    let res = BigInt(number) + BigInt(number2)
+    console.log(res)
     return reres
     
   }
