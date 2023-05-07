@@ -23,6 +23,21 @@ class simpleMath {
           }
         },
         {
+          opcode: 'resta',
+          text: ' [n] + [n2] ',
+          blockType: Scratch.BlockType.REPORTER,
+          arguments: {
+            n: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: "1",
+            },
+            n2: {
+                type: Scratch.ArgumentType.NUMBER,
+                defaultValue: "1"
+            }
+          }
+        },
+        {
           opcode: 'unir',
           text: ' [s1] unir [s2] ',
           blockType: Scratch.BlockType.REPORTER,
@@ -64,7 +79,12 @@ class simpleMath {
     return res.toString()
     
   }
-  
+  resta({ n, n2 }) {
+
+    let res = BigInt(n) - BigInt(n2)
+    return res.toString()
+    
+  }
   unir({ s1, s2 }) {
 
     let conc = s1.toString() + s2.toString()
