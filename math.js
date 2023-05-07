@@ -62,6 +62,7 @@ class simpleMath {
 
     let res = parseInt(number) + parseInt(number2)
     let reres = res.toString()
+    console.log(reres)
     return reres
     
   }
@@ -69,6 +70,7 @@ class simpleMath {
   unir({ s1, s2 }) {
 
     let conc = s1.toString() + s2.toString()
+    console.log(conc)
     return conc
     
   }
