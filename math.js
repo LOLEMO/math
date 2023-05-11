@@ -23,6 +23,17 @@ class simpleMath {
           }
         },
         {
+          opcode: 'sumatorio',
+          text: ' Sumar digitos de [num] ',
+          blockType: Scratch.BlockType.REPORTER,
+          arguments: {
+            num: {
+              type: Scratch.ArgumentType.NUMBER,
+              defaultValue: "123",
+            }
+          }
+        },
+        {
           opcode: 'resta',
           text: ' [n] - [n2] ',
           blockType: Scratch.BlockType.REPORTER,
@@ -77,6 +88,15 @@ class simpleMath {
 
     let res = BigInt(number) + BigInt(number2)
     return res.toString()
+    
+  }
+  sumatorio({ num }) {
+
+    let suma = 0;
+    for (let i = 0; i < num.length; i++) {
+    suma += parseInt(num.charAt(i), 10);
+      }
+    return suma
     
   }
   resta({ n, n2 }) {
